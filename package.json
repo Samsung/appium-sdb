@@ -1,0 +1,63 @@
+{
+    "name": "appium-sdb",
+    "version": "0.1.1",
+    "description": "Smart Development Bridge interface",
+    "main": "./build/index.js",
+    "scripts": {
+        "prepublish": "gulp prepublish",
+        "test": "gulp once",
+        "watch": "gulp watch",
+        "build": "gulp transpile",
+        "mocha": "mocha",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+        "precommit-test": "REPORTER=dot gulp once",
+        "lint": "gulp eslint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Samsung/appium-sdb.git"
+    },
+    "author": "tizen",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/Samsung/appium-sdb/issues"
+    },
+    "engines": [
+        "node"
+    ],
+    "bin": {},
+    "directories": {
+        "lib": "lib"
+    },
+    "dependencies": {
+        "appium-support": "^2.4.0",
+        "asyncbox": "^2.3.1",
+        "babel-runtime": "=5.8.24",
+        "bluebird": "^3.4.7",
+        "lodash": "^4.0.0",
+        "source-map-support": "^0.4.8",
+        "teen_process": "^1.3.1"
+    },
+    "pre-commit": [
+        "precommit-msg",
+        "precommit-test"
+    ],
+    "devDependencies": {
+        "appium-gulp-plugins": "^2.2.0",
+        "appium-test-support": "^0.4.0",
+        "babel-eslint": "^7.2.3",
+        "chai": "^4.1.0",
+        "chai-as-promised": "^7.1.1",
+        "eslint": "^3.10.2",
+        "eslint-config-appium": "^2.0.1",
+        "eslint-plugin-babel": "^3.3.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-mocha": "^4.11.0",
+        "eslint-plugin-promise": "^3.3.1",
+        "gulp": "^3.9.1",
+        "mocha": "^3.5.0",
+        "pre-commit": "^1.1.3",
+        "sinon": "^2.1.0",
+        "temp": "^0.8.3"
+    }
+}
