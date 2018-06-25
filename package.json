@@ -1,6 +1,6 @@
 {
     "name": "appium-sdb",
-    "version": "0.1.2",
+    "version": "1.0.0-beta",
     "description": "Smart Development Bridge interface",
     "main": "./build/index.js",
     "scripts": {
