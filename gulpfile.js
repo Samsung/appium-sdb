@@ -1,10 +1,11 @@
-"use strict";
+'use strict';
 
-let gulp = require('gulp'),
-    boilerplate = require('appium-gulp-plugins').boilerplate.use(gulp);
+const gulp = require('gulp');
+const boilerplate = require('appium-gulp-plugins').boilerplate.use(gulp);
 
 boilerplate({
   build: 'appium-sdb',
-  jscs: false,
-  e2eTest: { files: '${testDir}/functional/*-e2e-specs.js', }
+  e2eTest: {
+    files: '${testDir}/functional/*-e2e-specs.js',
+  },
 });
