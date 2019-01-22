@@ -4,8 +4,7 @@
 [![Downloads](http://img.shields.io/npm/dm/appium-sdb.svg)](https://npmjs.org/package/appium-sdb)
 [![Dependency Status](https://david-dm.org/Samsung/appium-sdb.svg)](https://david-dm.org/Samsung/appium-sdb)
 [![devDependency Status](https://david-dm.org/Samsung/appium-sdb/dev-status.svg)](https://david-dm.org/Samsung/appium-sdb#info=devDependencies)
-
-[![Build Status](https://api.travis-ci.org/Samsung/appium-sdb.png?branch=master)](https://travis-ci.org/Samsung/appium-sdb)
+[![Build Status](https://travis-ci.org/Samsung/appium-sdb.svg?branch=master)](https://travis-ci.org/Samsung/appium-sdb)
 
 A wrapper over tizen-sdb, implemented using ES6 and along with async/await. This package is mainly used by Appium to perform all sdb operations on tizen device.
 
