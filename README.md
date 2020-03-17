@@ -13,10 +13,23 @@ A wrapper over tizen-sdb, implemented using ES6 and along with async/await. This
 example:
 
 ```js
-import SDB from 'appium-sdb';
+import SDB, { DEFAULT_SDB_PORT } from 'appium-sdb';
 
 let sdb = new SDB();
-await sdb.createSDB();
+
+const opts = {
+  sdkRoot: null,
+  udid: null,
+  executable: {path: 'sdb', defaultArgs: []},
+  curDeviceId: null,
+  emulatorPort: null,
+  binaries: {},
+  suppressKillServer: null,
+  sdbPort: DEFAULT_SDB_PORT
+};
+
+let sdb2 = await SDB.createSDB(opts);
+
 console.log(await sdb.getConnectedDevices());
 ```
 
